@@ -7,16 +7,17 @@ let age = parseInt(prompt("Inserire l'età"));
     let diff_discount;
     // 3.2- applicare lo sconto in base all'età
     if (age < 18){ 
-        // 3.2.1- minorenni 20%
+        // minorenni 20%
         let discount_underage = price_ticket * 0.2;
         diff_discount = price_ticket - discount_underage;
         price_ticket = Number(diff_discount).toFixed(2);
     }
     else if (age > 17 && age < 66){
+        // tra 18 e 65 nessun sconto 
         price_ticket; 
     }
     else{
-        // 3.2.1- over 65 di 40%
+        // over 65 di 40%
         let discount_over65 = price_ticket * 0.4;
         diff_discount = price_ticket - discount_over65
         price_ticket = Number(diff_discount).toFixed(2);

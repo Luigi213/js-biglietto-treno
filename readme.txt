@@ -5,8 +5,9 @@ Il programma dovrà chiedere all'utente il numero di chilometri che vuole percor
 3- Calcolare il prezzo del biglietto, secondo delle regole:
     3.1- Applicare il prezzo in base ai chilometri da percorrere (0.21 € al km)
     3.2- Applicare lo sconto in base all'età
-        3.2.1- minorenni 20%
-        3.2.2- over 65 del 40%
+        IF- minorenni 20%
+        ELSE IF- tra 18 e 65 nessun sconto 
+        ELSE- over 65 del 40%
 4- Visuallizare in forma umana
     4.1- scrivo nel HTML    
     4.2- Recupero l'id nel DOM  
